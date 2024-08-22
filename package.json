@@ -1,0 +1,15 @@
+{
+    "name": "playwright-cucumber-project",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "cucumber-js --require-module ts-node/register --require tests/step-definitions/**/*.ts",
+        "test:report": "cucumber-js --require-module ts-node/register --require tests/step-definitions/**/*.ts --format json:report.json"
+    },
+    "devDependencies": {
+        "@cucumber/cucumber": "^10.9.0",
+        "@types/node": "^20.2.5",
+        "playwright": "^1.31.0",
+        "ts-node": "^10.7.0",
+        "typescript": "^5.0.4"
+    }
+}
